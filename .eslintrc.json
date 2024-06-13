@@ -1,0 +1,30 @@
+{
+    "extends": [
+      "standard",
+      "plugin:react/recommended",
+      "plugin:cypress/recommended"
+    ],
+    "plugins": [
+      "react",
+      "react-hooks",
+      "cypress"
+    ],
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "cypress/globals": true
+    },
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "rules": {
+      "react/react-in-jsx-scope":"off",
+      "no-unused-expressions": "off",
+      "cypress/no-unnecessary-waiting":"off"
+    }
+  }
+  
