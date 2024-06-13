@@ -1,3 +1,10 @@
+/*
+test scenario for leaderboardsReducer
+- leaderboardsReducer function
+   - should return the initial state which is an empty array when given not known action
+   - should update the state with leaderboards data as an array of objects when given a getLeaderboards action
+*/
+
 import { describe, it, expect } from 'vitest'
 import leaderboardsReducer from './reducer'
 

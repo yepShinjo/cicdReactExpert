@@ -1,3 +1,9 @@
+/*
+test scenario for Navbar rendering
+- Navbar component
+   - should render without crashing and should contain store provider so navbar can access the props inside
+*/
+
 import { render } from '@testing-library/react'
 import { describe, expect, vitest } from 'vitest'
 import Navbar from './Navbar'

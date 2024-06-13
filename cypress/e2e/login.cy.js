@@ -1,3 +1,12 @@
+/*
+test scenario for Login component
+- Login component
+  - should check if the email and password field is not empty
+  - should check if email and password is wrong
+  - should check if email and password is correct
+  - should do all the login thingyu flawlessly
+*/
+
 describe('Login', () => {
   it('should check for email and password field to not be empty', () => {
     cy.once('uncaught:exception', () => false)
