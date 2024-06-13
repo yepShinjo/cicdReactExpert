@@ -9,7 +9,7 @@ import LoadingBar from 'react-redux-loading-bar'
 import { useEffect } from 'react'
 
 const Navbar = () => {
-  const { profile, isLogin } = useSelector((state) => state.auth)
+  const { profile } = useSelector((state) => state.auth)
   // const { threadDetail } = useSelector((store) => store.threadDetail);
   const dispatch = useDispatch()
   const handleLogout = () => {
