@@ -1,3 +1,11 @@
+/*
+Test scenario for threadsAndUsersReducer:
+- threadsAndUsersReducer function
+   - should return the initial state when given an unknown action
+   - should be able to handle upvote, downvote and reversing vote (neutralizing vote) if the user do so
+   - should update the state correctly based on different actions like creating a thread, upvoting/downvoting a thread, or neutralizing a thread vote
+*/
+
 import { describe, expect, it } from 'vitest'
 import threadsAndUsersReducer from './reducer'
 
