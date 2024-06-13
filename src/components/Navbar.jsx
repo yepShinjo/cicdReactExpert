@@ -36,7 +36,7 @@ const Navbar = () => {
         <Link to={'/users'} data>
           users
         </Link>
-        <Link to={'/leaderboards'}>Leaderboard</Link>
+        <Link to={'/leaderboards'}>Leaderboard Ranking</Link>
         {isLogin
           ? (
             <Link test-cy-logout="logout" onClick={handleLogout}>Logout</Link>
