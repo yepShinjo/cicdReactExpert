@@ -9,7 +9,7 @@ import LoadingBar from 'react-redux-loading-bar'
 import { useEffect } from 'react'
 
 const Navbar = () => {
-  const { profile } = useSelector((state) => state.auth)
+  const { profile, isLogin } = useSelector((state) => state.auth)
   // const { threadDetail } = useSelector((store) => store.threadDetail);
   const dispatch = useDispatch()
   const handleLogout = () => {
@@ -36,7 +36,7 @@ const Navbar = () => {
         <Link to={'/users'} data>
           users
         </Link>
-        <Link to={'/leaderboards'}>Leaderboard</Link>
+        <Link to={'/leaderboards'}>Leaderboard Ranking</Link>
         {isLogin
           ? (
             <Link test-cy-logout="logout" onClick={handleLogout}>Logout</Link>
